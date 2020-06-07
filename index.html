@@ -8,6 +8,7 @@
 
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!--Normalizer link-->
     <link rel="stylesheet" href="css/normalize.css">
@@ -16,6 +17,7 @@
     
 </head>
 <body>
+    
     <header>
         
         <div id="header-container">
@@ -36,74 +38,94 @@
     </header>
 
     <main>
-        <section id="about-us">
 
-                <h1>The Code Block</h1>
+        <div class="container">
 
-                <video controls src="video\Blurred Video of Scripts Being Typed.mp4" poster=""></video>
+                <section id="about-us">
 
-                <h2>Meet the team</h2>
-                        <p>A duo of geeks gamers and developpers, The Code Block team was founded with the idea of being able to code anything anyone could want, from a mobile app to a full game.</p><br>
+                    <h1>The Code Block</h1>
 
-                <div class="intros">
+                    <video controls src="video\Blurred Video of Scripts Being Typed.mp4" poster=""></video>
 
-                    <article id="intro-hyde">
+                    <h2>Meet the team</h2>
+                            <p>A duo of geeks gamers and developpers, The Code Block team was founded with the idea of being able to code anything anyone could want, from a mobile app to a full game.</p><br>
 
-                        <div>
-                            <h3>Hyde "The Templar"</h3>
-                            <a href=""><img src="image/hyde.jpg" alt="picture of hyde"></a>
-                            <p>As a Templar Hyde spends a lot of time on the front-end, artist by nature he brings out most of the visual aspect of our team's work. His creativity often helps to find solutions.</p><br>
-                            <p>Favorite quote <q>If you wanna be a hippi put a flower on your pipi - Hyde</q></p>
-                        </div>
+                    <div class="intros">
 
-                        <div id="language-container-hyde">
-                            <h4>Skills and Languages aquired:</h4>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Java Script</li>
-                                <li>PHP</li>
-                                <li>SQL</li>
-                            </ul>
-                        </div><!--end of language container-->
+                        <article id="intro-hyde">
 
-                    </article>
+                            <div>
+                                <h3>Hyde "The Templar"</h3>
+                                <a href=""><img src="image/hyde.jpg" alt="picture of hyde"></a>
+                                <p>As a Templar Hyde spends a lot of time on the front-end, artist by nature he brings out most of the visual aspect of our team's work. His creativity often helps to find solutions.</p><br>
+                                <p>Favorite quote <q>If you wanna be a hippi put a flower on your pipi - Hyde</q></p>
+                            </div>
 
-                    <article id="intro-elan">
+                            <div id="language-container-hyde">
+                                <h4>Skills and Languages aquired:</h4>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Java Script</li>
+                                    <li>PHP</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </div><!--end of language container-->
 
-                        <h3>Elan "The Chanter"</h3>
-                        <a href=""><img src="images/elan.jpg" alt="picture of elan"></a>
-                        <p>As the nickname implies Elan is your go to support guy his drive to make the best quality work and his unwavering reliability is the reason we hit all out deadlines on time.</p><br>
-                        <p>Favorite quote<q>- Elan</q></p>
+                        </article><!--End of Hyde's intro-->
 
-                        <div id="language-container-elan">
-                            <h4>Skills and Languages aquired:</h4>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Java Script</li>
-                                <li>PHP</li>
-                                <li>SQL</li>
-                            </ul>
-                        </div><!--end of language container-->
+                        <article id="intro-elan">
 
-                    </article>
-                </div><!--End of intros-->
-        </section><!--End of about us section-->
+                            <h3>Elan "The Chanter"</h3>
+                            <a href=""><img src="images/elan.jpg" alt="picture of elan"></a>
+                            <p>As the nickname implies Elan is your go to support guy his drive to make the best quality work and his unwavering reliability is the reason we hit all out deadlines on time.</p><br>
+                            <p>Favorite quote<q>- Elan</q></p>
 
-        <section id="projects">
+                            <div id="language-container-elan">
+                                <h4>Skills and Languages aquired:</h4>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Java Script</li>
+                                    <li>PHP</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </div><!--end of language container-->
 
-        </section><!--End of projects section-->
+                        </article><!--End of Elan's intro-->
+
+                    </div><!--End of intros-->
+
+            </section><!--End of about us section-->
+
+            <section id="projects">
+
+            </section><!--End of projects section-->
+
+        </div><!--end of main container-->
+
     </main>
 
     <footer>
-        <div>
+
+        <div class="container">
+
             <form action="">
-                <caption>
-                    <legend></legend>
-                </caption>
+
+                <legend>Contact Us</legend>
+
+                <input type="text" name="name" placeholder="Your name:">
+                <input type="text" name="subject" placeholder="Subject:">
+                <input type="email" placeholder="E-mail:">
+                <textarea type="text" placeholder="Your message...">
+                
+
+                <button type="submit">send</button>
+                
             </form>
+
         </div>
+
     </footer>
 </body>
 </html>

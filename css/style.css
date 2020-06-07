@@ -4,47 +4,69 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url(../image/background.jpg);
-    margin: 0;
+html {
+    font-size: 62.5%; /*1 rem = 10px*/
 }
+
+body {
+    background-image: url(../image/background.png);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    
+    font-size: 3rem;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.301);
+}
+
+h1, h2, h3, legend{
+
+    font-family: 'Press Start 2P', cursive;
+
+}
+
 
                 /*HEADER*/
 
 header {
-    background-color: white;
-    width: 70%;
+    background-color: rgb(41, 47, 54);
+    width: 100%;
     margin: 0 auto;
     padding: 30px 0px;
 }
 
-#header-container{
+#header-container {
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-header a img{
+header a img {
     width: 20%;
 }
 
 header nav {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    justify-content: space-around;
+    width: 100%;
 }
 
-header nav a{
-
+header nav a {
     text-decoration: none;
     padding: 20px;
-    background-color: #5161b1;
-    color:white;
-    
+    background-color: rgb(78, 205, 196);
+    border-radius: 5px;
+    color: white;
+    height: 50px;
 }
 
-                /*MAIN*/
+
+            /*MAIN*/
+
 
 main {
     width: 70%;
@@ -53,38 +75,50 @@ main {
     padding: 40px;
     text-align: center;
 }
+
 video {
     width: 100%;
     margin: 0px auto;
 }
 
-#intro-hyde{
+#intro-hyde {
     text-align: left;
 }
 
-#intro-hyde ul li{
-
+#intro-hyde ul li {
     padding: 5px 10px;
     width: 200px;
-    color:white;
+    color: rgb(247, 255, 247);
 }
 
-#intro-hyde ul li:nth-child(1){
-
+#intro-hyde ul li:nth-child(1) {
     background-image: linear-gradient(75deg, red 10%, white 50%);
     border-bottom: 1px solid rgba(255, 0, 0, 0.205);
-    border-right:1px solid rgba(255, 0, 0, 0.205);
-    
+    border-right: 1px solid rgba(255, 0, 0, 0.205);
 }
 
-li{
+                /*FOOTER*/
 
-    list-style-type: none;
-
+footer .container {
+    width: 100%;
+    padding: 20px auto 50px;
+    background-color:  rgb(41, 47, 54);
 }
 
-#intro-elan{
+form {
+    background-color: rgb(247, 255, 247);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+}
 
-    text-align: right;
+legend {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px;
+}
 
+input {
+    height: 50px;
 }
