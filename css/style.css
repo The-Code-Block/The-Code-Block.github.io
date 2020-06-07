@@ -85,16 +85,26 @@ video {
     text-align: left;
 }
 
-#intro-hyde ul li {
+#intro-hyde ul li:hover {
     padding: 5px 10px;
     width: 200px;
     color: rgb(247, 255, 247);
+    transition: all 0.3s;
 }
 
-#intro-hyde ul li:nth-child(1) {
-    background-image: linear-gradient(75deg, red 10%, white 50%);
-    border-bottom: 1px solid rgba(255, 0, 0, 0.205);
-    border-right: 1px solid rgba(255, 0, 0, 0.205);
+#intro-hyde ul li{
+    
+    border-bottom: 1px solid rgba(20, 20, 20, 0.205);
+    border-right: 1px solid rgba(20, 20, 20, 0.205);
+    width: 200px;
+    height: 40px;
+    padding: 20px;
+}
+
+    /*intro Elan */
+
+#intro-elan {
+    text-align: right;
 }
 
                 /*FOOTER*/
