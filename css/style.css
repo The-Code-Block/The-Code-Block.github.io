@@ -109,6 +109,10 @@ h2 {
     text-align: left;
 }
 
+#intro-hyde img , #intro-elan img{ 
+    width: 150px;
+}
+
 #intro-hyde ul li:hover, #intro-elan ul li:hover {
     padding: 5px 10px;
     width: 200px;
