@@ -16,9 +16,9 @@ body {
 }
 
 p {
-
+  
     font-size: 1.5rem;
-
+  
 }
 
 h1{
@@ -112,7 +112,31 @@ h2 {
 }
 
 #intro-hyde {
+
     text-align: left;
+    display: flex;
+    border: 1px solid rgb(97, 172, 109);
+    padding: 10px;
+
+}
+
+#intro-elan {
+
+    text-align: right;
+    display: flex;
+    border: 1px solid rgb(97, 172, 109);
+    padding: 10px;
+
+}
+
+#intro-hyde img {
+    float: left;
+    margin-right: 10px;
+}
+
+#intro-elan img {
+    float: right;
+    margin-left: 10px;
 }
 
 #intro-hyde img , #intro-elan img{ 
@@ -135,12 +159,6 @@ h2 {
     padding: 20px;
     margin: 0 auto;
 }
-
-#intro-elan {
-
-    text-align: right;
-}
-
                 /*form*/
 
 form {
