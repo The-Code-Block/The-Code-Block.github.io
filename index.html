@@ -9,7 +9,7 @@
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
     <!--Normalizer link-->
     <link rel="stylesheet" href="css/normalize.css">
     <!--style.css-->
@@ -20,7 +20,7 @@
     
     <header>
         
-        <div id="header-container">
+        <div class="container">
 
             <a href="#">
                 <img src="image/The-code-block-logo.png">
@@ -41,88 +41,113 @@
 
         <div class="container">
 
-                <section id="about-us">
+            <section id class="video-section">
 
-                    <h1>The Code Block</h1>
+                <div class="vid-container">
 
-                    <video controls src="video\Blurred Video of Scripts Being Typed.mp4" poster=""></video>
+                    <div class="vid">
+                        <video autoplay mutes loop id="my-video" src="video\Blurred Video of Scripts Being Typed.mp4" poster="" autoplay></video>
+                        
+                    </div>
 
-                    <h2>Meet the team</h2>
-                            <p>A duo of geeks gamers and developpers, The Code Block team was founded with the idea of being able to code anything anyone could want, from a mobile app to a full game.</p><br>
+                    <div class="dark-overlay"></div><!--used ass a Dark overlay over the video in css-->
 
-                    <div class="intros">
+                    <div class="content">
 
-                        <article id="intro-hyde">
+                        <h1>The Code Block</h1>
 
-                            <div>
-                                <h3>Hyde "The Templar"</h3>
-                                <a href=""><img src="image/hyde.jpg" alt="picture of hyde"></a>
-                                <p>As a Templar Hyde spends a lot of time on the front-end, artist by nature he brings out most of the visual aspect of our team's work. His creativity often helps to find solutions.</p><br>
-                                <p>Favorite quote <q>If you wanna be a hippi put a flower on your pipi - Hyde</q></p>
-                            </div>
+                        <p>A duo of geeks gamers and developpers, The Code Block team was founded with the idea of being able to code anything anyone could want, from a mobile app to a full game.</p>
+                        
+                    </div>
+                    
+                </div><!--End of vid container-->
 
-                            <div id="language-container-hyde">
-                                <h4>Skills and Languages aquired:</h4>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Java Script</li>
-                                    <li>PHP</li>
-                                    <li>SQL</li>
-                                </ul>
-                            </div><!--end of language container-->
+            </section><!--End of video section-->
 
-                        </article><!--End of Hyde's intro-->
-
-                        <article id="intro-elan">
-
-                            <div id="language-container-elan">
-                                <h4>Skills and Languages aquired:</h4>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Java Script</li>
-                                    <li>PHP</li>
-                                    <li>SQL</li>
-                                </ul>    
-                            </div><!--end of language container-->
-        
-                            <div>
-                                <h3>Elan "The Chanter"</h3>
-                                <a href=""><img src="image/elan.jpg" alt="picture of elan"></a>
-                                <p>As the nickname implies Elan is your go to support guy his drive to make the best quality work and his unwavering reliability is the reason we hit all out deadlines on time.</p><br>
-                                <p>Favorite quote<q>- Elan</q></p>
-                            </div>
-                            
-                        </article><!--End of Elan's intro-->
-
-                    </div><!--End of intros-->
-
-            </section><!--End of about us section-->
-
-            <section id="projects">
-
-            </section><!--End of projects section-->
-
-            <section id="form-section">
+            <section id="about-us">
 
                 <div class="container">
 
-                    <form action="post">
-        
-                        <legend>Contact-Us</legend>
-                        <input type="text" name="name" placeholder="*Name" required>
-                        <input type="text" name="subject" placeholder="Subject">
-                        <input type="email" name="email" placeholder="*E-mail:" required>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="*your message.." required></textarea>
-                        <p>(*)required fields.</p>
-                        <button type="submit">send</button>
-                 
-                    </form>
-        
+                    <h2>Meet the team</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate deleniti enim et tenetur soluta possimus, itaque explicabo illum ea maxime? Blanditiis exercitationem doloremque tempora beatae dolor? Amet nesciunt iusto cum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur laborum non voluptatibus itaque tenetur facilis quasi architecto maiores at? Voluptates, quos itaque unde esse nemo animi fugiat officiis dignissimos accusamus.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore suscipit aliquam mollitia adipisci veritatis, est magnam labore saepe minus numquam quis ad obcaecati repellat. Ducimus vel voluptatem veritatis ex dolorem?
+                    </p>
+
                 </div>
 
-            </section>
+                <div class="intros-container">
+
+                    <article id="intro-hyde">
+
+                        <div>
+                            <h3>Hyde "The Templar"</h3>
+                            <a href=""><img src="image/hyde.jpg" alt="picture of hyde"></a>
+                            <p>As a Templar Hyde spends a lot of time on the front-end, artist by nature he brings out most of the visual aspect of our team's work. His creativity often helps to find solutions.</p><br>
+                            <p>Favorite quote <q>If you wanna be a hippi put a flower on your pipi - Hyde</q></p>
+                        </div>
+
+                        <div id="language-container-hyde">
+                            <h4>Skills and Languages aquired:</h4>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Java Script</li>
+                                <li>PHP</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div><!--end of language container-->
+
+                    </article><!--End of Hyde's intro-->
+
+                    <article id="intro-elan">
+
+                        <div>
+                            <h3>Elan "The Chanter"</h3>
+                            <a href="#"><img src="image/elan.jpg" alt="picture of elan"></a>
+                            <p>As the nickname implies Elan is your go to support guy his drive to make the best quality work and his unwavering reliability is the reason we hit all out deadlines on time.</p><br>
+                            <p>Favorite quote<q>- Elan</q></p>
+                        </div>
+
+                        <div id="language-container-elan">
+                            <h4>Skills and Languages aquired:</h4>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Java Script</li>
+                                <li>PHP</li>
+                                <li>SQL</li>
+                            </ul>    
+                        </div><!--end of language container-->
+                        
+                    </article><!--End of Elan's intro-->
+
+                </div><!--End of intros-->
+
+        </section><!--End of about us section-->
+
+        <section id="projects">
+
+        </section><!--End of projects section-->
+
+        <section id="form-section">
+
+            <div class="container">
+
+                <form action="post">
+    
+                    <legend>Contact-Us</legend>
+                    <input type="text" name="name" placeholder="*Name" required>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <input type="email" name="email" placeholder="*E-mail:" required>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="*your message.." required></textarea>
+                    <p>(*)required fields.</p>
+                    <button type="submit">send</button>
+                
+                </form>
+    
+            </div>
+
+        </section>
 
         </div><!--end of main container-->
 
@@ -130,6 +155,22 @@
 
     <footer>
 
+        <div class="container">
+
+            <a href="#">
+                <img src="image/The-code-block-logo.png">
+            </a>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#aboutus">About Us</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+
+        </div>
+
     </footer>
+
 </body>
 </html>
