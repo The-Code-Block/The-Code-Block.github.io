@@ -9,22 +9,32 @@ html {
 }
 
 body {
-    background-image: url(../image/background.png);
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Odibee Sans', cursive;
+    background-color: black;
     color: rgb(97, 172, 109);
+    line-height: 1.8;
 }
 
 p {
   
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   
 }
 
 h1{
     
-    font-size: 3rem;
+    font-size: 5rem;
     border-bottom: 1px solid rgba(150, 150, 150, 0.301);
+}
+
+h2{
+    color: rgba(255, 255, 255, 0.377);
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 2rem;
 }
 
 h1, h2, h3, legend{
@@ -39,108 +49,169 @@ li {
 
 .container {
 
-    background-color: rgb(41, 47, 54);
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px;
-
+    width: 100%;
+    
 }
 
 
                 /*HEADER*/
 
-header {
-    background-color: rgb(41, 47, 54);
-    width: 100%;
-    margin: 0 auto;
-    padding: 30px 0px;
-}
 
-#header-container {
-    width: 80%;
+header .container {
+    width: 90%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 header a img {
-    width: 45%;
+    width: 40%;
 }
 
 header nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 60%;
+    justify-content: flex-end;
+    width: 70%;
+    margin: 0 auto;
 }
 
 header nav a {
+    
     text-decoration: none;
     padding: 20px;
-    background-color: rgb(97, 172, 109);
-    border-radius: 5px;
-    color: white;
+    color: rgba(255, 255, 255, 0.377);
+    font-size: 2.5rem;
     height: 50px;
 }
 
 header nav a:hover {
-    background-color: rgb(98, 23, 8);
     transform: translateY(10px);
+    color: white;
     transition: all 0.3s;
 }
 
+            /*Video*/
 
-            /*MAIN*/
+
+.vid-container {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    border: 1px solid rgb(97, 172, 109);
+}
+
+.vid {
+    z-index: -1;
+}    
+
+video{
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 50%; left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.dark-overlay{
+    position: absolute;
+    top: 0; left: 0;
+    background-color: rgba(26, 26, 26, 0.432);
+    width: 100%; height:100%;
+}
 
 
-main {
-    width: 70%;
-    margin: 0 auto;
-    background-color: white;
+
+                /*MAIN*/
+
+
+main { 
     text-align: center;
 }
 
-video {
-    width: 100%;
-    margin: 0px auto;
+                /*about us section*/
+
+#about-us{
+    background-color: rgb(41, 47, 54);
 }
 
-h2 {
-    margin: 50px;
-    font-size: 2.5rem;
+#about-us .container{
+    color: rgba(255, 255, 255, 0.377);
+    padding: 50px;
+}
+
+#about-us .container h2:hover{
+    color: white;
+}
+
+#about-us .container p:hover{
+    color: white;
+}
+
+.intros-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.intros-container article{
+    background-color: rgba(0, 0, 0, 0.445);
+    flex-basis: 40%;
+    margin-bottom: 50px ;
 }
 
 #intro-hyde {
 
     text-align: left;
     display: flex;
+    flex-direction: column;
     border: 1px solid rgb(97, 172, 109);
-    padding: 10px;
+    padding: 50px;
 
 }
 
 #intro-elan {
 
-    text-align: right;
+    text-align: left;
     display: flex;
+    flex-direction: column;
     border: 1px solid rgb(97, 172, 109);
-    padding: 10px;
+    padding: 50px;
 
 }
 
 #intro-hyde img {
     float: left;
+    width: 200px;    
     margin-right: 10px;
+    border: 1px solid rgb(97, 172, 109);
 }
 
 #intro-elan img {
-    float: right;
-    margin-left: 10px;
+    float: left;
+    width: 150px;
+    margin-right: 10px;
+    border: 1px solid rgb(97, 172, 109);
 }
 
-#intro-hyde img , #intro-elan img{ 
-    width: 150px;
+h4 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+                /*skill bar animation*/
+
+#intro-hyde ul li, #intro-elan ul li {
+    
+    border-bottom: 1px solid rgba(20, 20, 20, 0.205);
+    border-right: 1px solid rgba(20, 20, 20, 0.205);
+    font-size: 1.5rem;
+    width: 200px;
+    height: 50px;
+    padding: 20px;
+    margin: 0 auto;
 }
 
 #intro-hyde ul li:hover, #intro-elan ul li:hover {
@@ -150,15 +221,16 @@ h2 {
     transition: all 0.3s;
 }
 
-#intro-hyde ul li, #intro-elan ul li {
-    
-    border-bottom: 1px solid rgba(20, 20, 20, 0.205);
-    border-right: 1px solid rgba(20, 20, 20, 0.205);
-    width: 200px;
-    height: 40px;
-    padding: 20px;
-    margin: 0 auto;
+@keyframes skill-bar{
+    from {
+        
+    }
+    to{
+        
+    }
 }
+
+
                 /*form*/
 
 form {
@@ -183,4 +255,46 @@ button[type=submit]{
     border-style: none;
     margin: 10px;
     color: rgb(97, 172, 109);
+}
+
+                /*FOOTER*/
+footer {
+    background-color: black;
+}
+
+footer .container{
+    width: 90%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+footer .container a img {
+    opacity: 0.5;
+    width: 150px;
+}
+
+footer .container{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container nav a{
+
+    text-decoration: none;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.377);
+    font-size: 1.5rem;
+    height: 50px;
+    
+}
+
+footer .container nav a:hover{
+
+    transform: translateY(10px);
+    color: white;
+    transition: all 0.3s;
+
 }
