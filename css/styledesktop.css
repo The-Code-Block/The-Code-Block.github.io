@@ -1,0 +1,300 @@
+                /*GENERIC*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /*1 rem = 10px*/
+}
+
+body {
+    margin: 0;
+    font-family: 'Odibee Sans', cursive;
+    background-color: black;
+    color: rgb(97, 172, 109);
+    line-height: 1.8;
+}
+
+p {
+  
+    font-size: 1.8rem;
+  
+}
+
+h1{
+    
+    font-size: 5rem;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.301);
+}
+
+h2{
+    color: rgba(255, 255, 255, 0.377);
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h1, h2, h3, legend{
+
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+
+    width: 100%;
+    
+}
+
+
+                /*HEADER*/
+
+
+header .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a img {
+    width: 40%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 70%;
+    margin: 0 auto;
+}
+
+header nav a {
+    
+    text-decoration: none;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.377);
+    font-size: 2.5rem;
+    height: 50px;
+}
+
+header nav a:hover {
+    transform: translateY(10px);
+    color: white;
+    transition: all 0.3s;
+}
+
+            /*Video*/
+
+
+.vid-container {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    border: 1px solid rgb(97, 172, 109);
+}
+
+.vid {
+    z-index: -1;
+}    
+
+video{
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 50%; left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.dark-overlay{
+    position: absolute;
+    top: 0; left: 0;
+    background-color: rgba(26, 26, 26, 0.432);
+    width: 100%; height:100%;
+}
+
+
+
+                /*MAIN*/
+
+
+main { 
+    text-align: center;
+}
+
+                /*about us section*/
+
+#about-us{
+    background-color: rgb(41, 47, 54);
+}
+
+#about-us .container{
+    color: rgba(255, 255, 255, 0.377);
+    padding: 50px;
+}
+
+#about-us .container h2:hover{
+    color: white;
+}
+
+#about-us .container p:hover{
+    color: white;
+}
+
+.intros-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.intros-container article{
+    background-color: rgba(0, 0, 0, 0.445);
+    flex-basis: 40%;
+    margin-bottom: 50px ;
+}
+
+#intro-hyde {
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(97, 172, 109);
+    padding: 50px;
+
+}
+
+#intro-elan {
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(97, 172, 109);
+    padding: 50px;
+
+}
+
+#intro-hyde img {
+    float: left;
+    width: 200px;    
+    margin-right: 10px;
+    border: 1px solid rgb(97, 172, 109);
+}
+
+#intro-elan img {
+    float: left;
+    width: 150px;
+    margin-right: 10px;
+    border: 1px solid rgb(97, 172, 109);
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+                /*skill bar animation*/
+
+#intro-hyde ul li, #intro-elan ul li {
+    
+    border-bottom: 1px solid rgba(20, 20, 20, 0.205);
+    border-right: 1px solid rgba(20, 20, 20, 0.205);
+    font-size: 1.5rem;
+    width: 200px;
+    height: 50px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#intro-hyde ul li:hover, #intro-elan ul li:hover {
+    padding: 5px 10px;
+    width: 200px;
+    color: rgb(247, 255, 247);
+    transition: all 0.3s;
+}
+
+@keyframes skill-bar{
+    from {
+        
+    }
+    to{
+        
+    }
+}
+
+
+                /*form*/
+
+form {
+    background-color: rgb(247, 255, 247);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+legend {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px;
+}
+
+input {
+    height: 50px;
+}
+
+button[type=submit]{
+    border-style: none;
+    margin: 10px;
+    color: rgb(97, 172, 109);
+}
+
+                /*FOOTER*/
+footer {
+    background-color: black;
+}
+
+footer .container{
+    width: 90%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+footer .container a img {
+    opacity: 0.5;
+    width: 150px;
+}
+
+footer .container{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container nav a{
+
+    text-decoration: none;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.377);
+    font-size: 1.5rem;
+    height: 50px;
+    
+}
+
+footer .container nav a:hover{
+
+    transform: translateY(10px);
+    color: white;
+    transition: all 0.3s;
+
+}
