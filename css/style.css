@@ -9,32 +9,21 @@ html {
 }
 
 body {
+
     margin: 0;
     font-family: 'Odibee Sans', cursive;
     background-color: black;
     color: rgb(97, 172, 109);
     line-height: 1.8;
+    text-align: center;
+
 }
 
 p {
   
-    font-size: 1.8rem;
-  
-}
-
-h1{
-    
-    font-size: 5rem;
-    border-bottom: 1px solid rgba(150, 150, 150, 0.301);
-}
-
-h2{
-    color: rgba(255, 255, 255, 0.377);
-    font-size: 4rem;
-}
-
-h3{
     font-size: 2rem;
+    text-align: justify;
+  
 }
 
 h1, h2, h3, legend{
@@ -50,31 +39,30 @@ li {
 .container {
 
     width: 100%;
-    
+    padding: 0px 20px;
+    margin: 0 auto;   
+    background-color: rgba(22, 87, 60, 0.445);
+
 }
 
 
                 /*HEADER*/
 
 
-header .container {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 header a img {
-    width: 40%;
+
+    width: 100%;
+
 }
 
 header nav {
+
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
     width: 70%;
-    margin: 0 auto;
+    margin:  auto;
+
 }
 
 header nav a {
@@ -87,214 +75,338 @@ header nav a {
 }
 
 header nav a:hover {
+
     transform: translateY(10px);
     color: white;
     transition: all 0.3s;
+
 }
 
-            /*Video*/
+            /*H1 The code block*/
 
+h1{
 
-.vid-container {
-    position: relative;
-    height: 500px;
-    overflow: hidden;
-    border: 1px solid rgb(97, 172, 109);
+    text-align: center;
+    font-size: 5rem;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.301);
+
 }
-
-.vid {
-    z-index: -1;
-}    
 
 video{
-    width: 100%;
+
+    display: none;
+
 }
 
 .content {
-    position: absolute;
-    top: 50%; left:50%;
-    transform: translate(-50%, -50%);
-}
 
-.dark-overlay{
-    position: absolute;
-    top: 0; left: 0;
-    background-color: rgba(26, 26, 26, 0.432);
-    width: 100%; height:100%;
+    padding-top: 100px;
+
 }
 
 
+                /* Meet the team */
 
-                /*MAIN*/
-
-
-main { 
-    text-align: center;
+#meet-team{
+    padding: 30px;
+    margin: 0 auto;
 }
 
-                /*about us section*/
-
-#about-us{
-    background-color: rgb(41, 47, 54);
+#meet-team .container{
+    width: 100%;
+    margin: 0 auto;
 }
 
-#about-us .container{
+h2{
+
     color: rgba(255, 255, 255, 0.377);
-    padding: 50px;
-}
+    font-size: 3rem;
 
-#about-us .container h2:hover{
-    color: white;
-}
-
-#about-us .container p:hover{
-    color: white;
-}
-
-.intros-container{
-    display: flex;
-    justify-content: space-around;
 }
 
 .intros-container article{
-    background-color: rgba(0, 0, 0, 0.445);
-    flex-basis: 40%;
-    margin-bottom: 50px ;
-}
 
-#intro-hyde {
-
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgb(97, 172, 109);
-    padding: 50px;
+    padding: 50px 20px;
+    background-color: rgba(22, 87, 60, 0.445);
+    margin-bottom: 50px;
 
 }
 
-#intro-elan {
+h3{
 
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgb(97, 172, 109);
-    padding: 50px;
+    font-size: 2rem;
 
 }
 
-#intro-hyde img {
-    float: left;
-    width: 200px;    
-    margin-right: 10px;
-    border: 1px solid rgb(97, 172, 109);
-}
+#intro-hyde img{
 
-#intro-elan img {
-    float: left;
-    width: 150px;
-    margin-right: 10px;
-    border: 1px solid rgb(97, 172, 109);
-}
-
-h4 {
-    text-align: center;
-    font-size: 1.8rem;
-}
-
-                /*skill bar animation*/
-
-#intro-hyde ul li, #intro-elan ul li {
-    
-    border-bottom: 1px solid rgba(20, 20, 20, 0.205);
-    border-right: 1px solid rgba(20, 20, 20, 0.205);
-    font-size: 1.5rem;
     width: 200px;
-    height: 50px;
-    padding: 20px;
-    margin: 0 auto;
+
 }
 
-#intro-hyde ul li:hover, #intro-elan ul li:hover {
-    padding: 5px 10px;
-    width: 200px;
-    color: rgb(247, 255, 247);
-    transition: all 0.3s;
+#intro-elan img{
+
+    width: 150px
+
 }
 
-@keyframes skill-bar{
-    from {
-        
-    }
-    to{
-        
-    }
+h4{
+
+    font-size: 2rem;
+
 }
 
+li {
 
-                /*form*/
+    list-style-type: none;
+    font-size: 2rem;
+
+}
+
+                /*contact form*/
 
 form {
-    background-color: rgb(247, 255, 247);
-    width: 50%;
+
+    /*background-color: rgba(22, 87, 60, 0.445);*/
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0px auto;
+
 }
 
 legend {
+
     font-size: 2rem;
     text-align: center;
     margin: 20px;
+
 }
 
 input {
+
     height: 50px;
+    margin: 10px;
+
+}
+
+textarea {
+
+    margin: 10px;
+
+}
+
+form p{
+
+    text-align: center;
+
 }
 
 button[type=submit]{
+
     border-style: none;
     margin: 10px;
     color: rgb(97, 172, 109);
+    padding: 20px;
+    font-size: 3rem;
+
 }
 
-                /*FOOTER*/
-footer {
-    background-color: black;
-}
+                /*Footer*/
 
-footer .container{
-    width: 90%;
-    margin: 0 auto;
-    background-color: black;
-}
+footer .container a img{
 
-footer .container a img {
     opacity: 0.5;
-    width: 150px;
+    width: 50%;
+
 }
 
-footer .container{
-    width: 90%;
-    margin: 50px auto;
+footer .container nav{
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+
 }
 
 footer .container nav a{
 
     text-decoration: none;
-    padding: 20px;
     color: rgba(255, 255, 255, 0.377);
-    font-size: 1.5rem;
-    height: 50px;
-    
+    font-size: 2rem;
+
 }
 
-footer .container nav a:hover{
+                /*tablet screen min width 768px*/
 
-    transform: translateY(10px);
-    color: white;
-    transition: all 0.3s;
+@media screen and (min-width: 768px){
+
+    .container{
+        width: 80%;
+    }
+}    
+
+                /*desktop screen min width 1025px*/
+
+@media screen and (min-width: 1025px){
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header a img{
+        display: block;
+        width: 40%;
+    }
+
+    header .container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header .container nav{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+                  /*Video*/
+
+
+    .vid-container {
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+        border: 1px solid rgb(97, 172, 109);
+    }
+
+    .vid {
+        z-index: -1;
+    }    
+
+    video{
+        width: 100%;
+        display: block;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%; left:50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .dark-overlay{
+        position: absolute;
+        top: 0; left: 0;
+        background-color: rgba(26, 26, 26, 0.432);
+        width: 100%; height:100%;
+    }
+
+            /*Intros*/
+
+    .intros-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .intros-container article{
+        background-color: rgba(0, 0, 0, 0.445);
+        flex-basis: 40%;
+        margin-bottom: 50px ;
+    }
+    
+    #intro-hyde {
+    
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgb(97, 172, 109);
+        padding: 50px;
+    
+    }
+    
+    #intro-elan {
+    
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgb(97, 172, 109);
+        padding: 50px;
+    
+    }
+    
+    #intro-hyde img {
+        float: left;
+        width: 200px;    
+        margin-right: 10px;
+        border: 1px solid rgb(97, 172, 109);
+    }
+    
+    #intro-elan img {
+        float: left;
+        width: 150px;
+        margin-right: 10px;
+        border: 1px solid rgb(97, 172, 109);
+    }
+    
+    h4 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    
+                    /*skill bar animation*/
+    
+    #intro-hyde ul li, #intro-elan ul li {
+        
+        border-bottom: 1px solid rgba(20, 20, 20, 0.205);
+        border-right: 1px solid rgba(20, 20, 20, 0.205);
+        font-size: 1.5rem;
+        width: 200px;
+        height: 50px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    
+    #intro-hyde ul li:hover, #intro-elan ul li:hover {
+        padding: 5px 10px;
+        width: 200px;
+        color: rgb(247, 255, 247);
+        transition: all 0.3s;
+    }
+
+            /*Form*/
+
+    form{
+        width: 80%;
+    }
+    button[type=submit]{
+        width: 200px;
+        margin: 20px auto;
+    }        
+
+            /*Footer*/
+
+    footer .container {
+
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 70px;
+
+    }
+
+    footer .container a img{
+        display: block;
+        width: 100px;
+    }
+
+    footer .container nav {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 40%;
+    }
 
 }
